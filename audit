@@ -1,0 +1,10 @@
+clear
+echo "--- AUDIT de $(hostname), le $(date -I), par $(whoami) ---
+
+Version du noyau : $(uname -a)
+
+Nombre de processus : $(ps -ef |wc -l)
+
+Occupation mémoire : $(free -h)
+
+Occupation disque : $(df -h)"
